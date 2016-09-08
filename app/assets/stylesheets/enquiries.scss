@@ -1,0 +1,28 @@
+// Place all the styles related to the Enquiries controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.new_enquiry {
+  margin-bottom: 100px;
+  padding: 0px;
+  width: 100%;
+}
+// .field {
+//   text-align: left;
+// }
+.field {
+  display:block;
+  text-align: center;
+  vertical-align: baseline;
+}
+.contact_form {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+}
+.input {
+  width: 400px;
+}
+.label {
+  font-size: 20px;
+}

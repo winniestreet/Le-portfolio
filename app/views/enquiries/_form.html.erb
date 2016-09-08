@@ -1,0 +1,52 @@
+<%= form_for(enquiry) do |f| %>
+  <% if enquiry.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(enquiry.errors.count, "error") %> prohibited this enquiry from being saved:</h2>
+
+      <ul>
+      <% enquiry.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class=contact_form style="width: 500px; margin-left: auto; margin-right: auto;">
+  <h1 class="text-centre about">
+    CONTACT
+  </h1>
+  <div class="form-group">
+    <%= f.label :name %>
+    <!-- <input class="form-control"> -->
+
+    <%= f.text_field :name, class: 'form-control'%>
+  </input>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :email %>
+    <!-- <input class="form-control"> -->
+
+    <%= f.text_field :email, class: 'form-control'%>
+  </input>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :subject %>
+    <!-- <input class="form-control"> -->
+
+    <%= f.text_field :subject, class: 'form-control'%>
+  </input>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :message %>
+    <!-- <input class="form-control"> -->
+    <%= f.text_area :message, class: 'form-control' %>
+  </input>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+</div>
+<% end %>

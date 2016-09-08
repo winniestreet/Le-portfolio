@@ -1,0 +1,139 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+  height: 100%;
+
+}
+
+body {
+  height: 100%;
+}
+
+.leftside{
+  background: cover;
+  background-image: url("http://photofiles.alphacoders.com/259/25903.jpg");
+  height: 100vh;
+}
+
+.rightside{
+  background-image: url(http://img-fotki.yandex.ru/get/4711/14124454.285/0_7af2e_30a4bc3b_XXL);
+  height: 100vh
+}
+
+a {
+  text-decoration:none;
+  color:white;
+}
+a:focus, a:hover{
+  background-color: white;
+  color:black;
+  text-decoration: none;
+}
+
+.logo {
+  position:absolute;
+  z-index: 1;
+  width: 100%;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 100px;
+  color: white;
+  margin-top: 40vh;
+  text-align: center;
+
+}
+.cd {
+  color: white;
+  text-decoration: none;
+  margin-top: 55vh;
+  font-size: 20px;
+}
+.cd:hover {
+  color: blue;
+  text-decoration: none;
+  margin-top: 55vh;
+  font-size: 20px;
+}
+
+.nav-style>li{
+  font-size: 15px;
+  display: inline-block;
+  margin-right: 30px;
+  color:white;
+  margin-top: 15px;
+  /*position: absolute;*/
+}
+
+.navbar-nav {
+  right: 0px;
+  z-index:5;
+  /*background-color: white;*/
+  position: absolute;
+}
+.about {
+  margin-top: 30vh;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+.about_para {
+  text-align: justify;
+  font-size: 20px;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  margin-bottom: 30vh;
+  margin-top: 10vh;
+
+}
+.footer {
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    // background: #061D25;
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+.footer a {
+    color: black;
+    font-size: 40px;
+    padding: 10px;
+    border-right: 1px solid #70726F;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.footer a:hover {
+    color: white;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.imageContainer {
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.eye_tilt {
+  // height: 50vh;
+  width: 100%;
+  overflow: hidden;
+  animation: zoom 20s infinite;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes zoom {
+    0% {
+      opacity: 0;
+    }
+    5% {
+      opacity: 1;
+    }
+    95% {
+        transform: scale3d(1.5, 1.5, 1.5) translate3d(-190px, -120px, 0px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    100% {
+        transform: scale3d(2, 2, 2) translate3d(-170px, -100px, 0px);
+        opacity: 0;
+    }
+}

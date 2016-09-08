@@ -1,0 +1,64 @@
+<head>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body data-spy="scroll" data-target="#myNav">
+
+    <h1 class="text-center logo">
+      WINNIE STREET
+    </h1>
+    <nav id="mainNav" class="nav navbar-nav navbar-right page-scroll">
+      <li><a href="#">home</a></li>
+      <%=link_to 'blog',articles_path,:class => "navstyle"%>
+      <li><a href="#contact">contact</a></li>
+      <% if user_signed_in? %>
+        <%= link_to 'sign out',destroy_user_session_path, method: :delete%>
+      <%end%>
+    </nav>
+
+    <div class="row">
+      <div class="col-md-6 leftside">
+        <!-- <button type="button" class="button btn btn-primary btn-lg pull-right" data-toggle="modal" data-target="DEVELOPMENT">
+          FULL STACK DEVELOPER
+        </button> -->
+        <a href="/" class="cd pull-right">
+          JUNIOR DEVELOPER
+        </a>
+      </div>
+
+      <div class="col-md-6 rightside">
+        <!-- <button type="button" class="button btn btn-primary btn-lg pull-left" data-toggle="modal" data-target="VR">
+          VIRTUAL REALITY CREATIVE
+        </button> -->
+        <a href="/" class="cd pull-left">
+          VIRTUAL REALITY CREATIVE
+        </a>
+      </div>
+    </div>
+
+    <h1 class="text-centre about">
+      puts "Hello"
+    </h1>
+    <p class="text-centre about_para">
+      My name is Winnie and I am a junior developer, a designer and a creative.
+      My main area of interest is using new technologies such as VR and AI to improve
+      people's lives and spread empathy. Please take a look at my portfolio, and get
+      in touch if there is a project that you think we could work on together!
+    </p>
+    <div id="imageContainer">
+    <%= image_tag "eye_tilt.png", :class => "eye_tilt" %>
+  </div>
+
+  <div id="contact">
+    <%= render 'enquiries/form', enquiry: @enquiry %>
+  </div>
+
+  <footer class="footer">
+    <div class="container text-center">
+        <a href="https://www.facebook.com/winnie.street.5"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/isabelstreet1/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/isabelstreet"><i class="fa fa-linkedin"></i></a
+    </div>
+  </footer>
+  </body>
