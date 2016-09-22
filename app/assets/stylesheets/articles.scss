@@ -1,9 +1,17 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  height: 100%;
+  background-color: black !important;
+}
+
 .blog-main {
-  background-color: pink;
+  background-color: #f2dede;
   margin-bottom: 60px;
+  display: block;
+  margin-left: auto;
+
 }
 .sidebar-module-inset {
     padding: 15px;
@@ -13,4 +21,25 @@
 .sidebar-module {
     padding: 15px;
     margin: 0 -15px 15px;
+}
+
+.blog-sidebar{
+  // display: inline-block;
+
+}
+.blog-all {
+    // padding-right: 45px;
+    padding-left: 60px;
+    // margin-right: auto!important;
+    margin-left: 50px ;
+    border-left: 2px blue;
+
+}
+.blog-test{
+  display:flex;
+}
+.blog-image{
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

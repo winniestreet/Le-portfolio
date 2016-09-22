@@ -1,0 +1,21 @@
+.nav {
+  right: 0px;
+  z-index:5;
+  /*background-color: white;*/
+  position: absolute;
+  color: white!important;
+  background-color: transparent!important;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.nav :hover{
+  color: blue;
+  text-decoration:none;
+  background-color: transparent!important;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.nav a {
+    color: white;
+}

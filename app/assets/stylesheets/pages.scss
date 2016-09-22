@@ -10,6 +10,20 @@ body {
   height: 100%;
 }
 
+div.logo {
+  display:block;
+  z-index: 6;
+  padding-left: 47.5vw;
+  padding-right: 47.5vw;
+  padding-top: 3vh;
+  position: absolute;
+
+}
+.logo {
+  height: 60px;
+  width: 60px;
+}
+
 .leftside{
   background: cover;
   background-image: url("http://photofiles.alphacoders.com/259/25903.jpg");
@@ -17,7 +31,7 @@ body {
 }
 
 .rightside{
-  background-image: url(http://img-fotki.yandex.ru/get/4711/14124454.285/0_7af2e_30a4bc3b_XXL);
+  background-image: url("http://img-fotki.yandex.ru/get/4711/14124454.285/0_7af2e_30a4bc3b_XXL");
   height: 100vh
 }
 
@@ -31,12 +45,12 @@ a:focus, a:hover{
   text-decoration: none;
 }
 
-.logo {
+.name {
   position:absolute;
   z-index: 1;
   width: 100%;
-  font-family: 'Hammersmith One', sans-serif;
-  font-size: 100px;
+  font-family: 'Fredoka One';
+  font-size: 13vh;
   color: white;
   margin-top: 40vh;
   text-align: center;
@@ -46,15 +60,19 @@ a:focus, a:hover{
   color: white;
   text-decoration: none;
   margin-top: 55vh;
-  font-size: 20px;
+  font-size: 3vh;
+  font-family: 'Montserrat', sans-serif;
 }
 .cd:hover {
   color: blue;
   text-decoration: none;
   margin-top: 55vh;
-  font-size: 20px;
+  font-size: 3.2vh;
+  float: bottom;
+  background: transparent;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
-
 .nav-style>li{
   font-size: 15px;
   display: inline-block;
@@ -64,29 +82,33 @@ a:focus, a:hover{
   /*position: absolute;*/
 }
 
-.navbar-nav {
-  right: 0px;
-  z-index:5;
-  /*background-color: white;*/
-  position: absolute;
+.about_rows {
+  height: 100vh;
+
 }
+
+
 .about {
-  margin-top: 30vh;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 20vh;
   text-align: center;
   font-size: 40px;
   font-weight: bold;
+  color: white;
 }
 .about_para {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
   text-align: justify;
   font-size: 20px;
-  margin-left: 20vw;
-  margin-right: 20vw;
-  margin-bottom: 30vh;
-  margin-top: 10vh;
-
+  // margin-left: 20vw;
+  // margin-right: 20vw;
+  // margin-bottom: 30vh;
+  // margin-top: 10vh;
+  padding: 5vw;
 }
+
 .footer {
-    position:fixed;
     bottom: 0;
     width: 100%;
     // background: #061D25;
@@ -95,7 +117,7 @@ a:focus, a:hover{
 }
 
 .footer a {
-    color: black;
+    color: white;
     font-size: 40px;
     padding: 10px;
     border-right: 1px solid #70726F;
@@ -103,13 +125,20 @@ a:focus, a:hover{
     transition: all .5s ease;
 }
 .footer a:hover {
-    color: white;
+    color: blue;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
+    background: transparent;
 }
 .imageContainer {
   -webkit-backface-visibility: hidden;
   overflow: hidden;
+}
+
+.me_ski {
+  height: auto;
+  width: 50vw;
+
 }
 
 .eye_tilt {
@@ -136,4 +165,18 @@ a:focus, a:hover{
         transform: scale3d(2, 2, 2) translate3d(-170px, -100px, 0px);
         opacity: 0;
     }
+}
+@-webkit-keyframes name {
+	0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(0.9); }
+	100% { -webkit-transform: scale(1); }
+}
+
+.name
+{
+	-webkit-animation-name: name;
+	-webkit-animation-duration: 200ms;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: 2;
+	-webkit-animation-timing-function: linear;
 }
