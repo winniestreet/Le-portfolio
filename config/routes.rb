@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get 'pages/login'
 
   devise_for :views
-  devise_for :users
+  devise_for :users, controllers: { registrations: "registrations"}
   root 'pages#home'
 
   resources :articles
