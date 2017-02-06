@@ -8,30 +8,37 @@ html {
 
 body {
   height: 100%;
+  color: white;
 }
 
+
+// div.logo {
+//   display:block;
+//   z-index: 6;
+//   padding-left: 47.5vw;
+//   padding-right: 47.5vw;
+//   padding-top: 3vh;
+//   position: absolute;
+//
+// }
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  position:absolute;
+}
+.img-logo {
+  height: 80px;
+  width: 80px;
+  padding-top: 0;
+}
 div.logo {
-  display:block;
-  z-index: 6;
-  padding-left: 47.5vw;
-  padding-right: 47.5vw;
-  padding-top: 3vh;
-  position: absolute;
-
-}
-.logo {
-  height: 60px;
-  width: 60px;
+  z-index: 3;
+  padding: 20px;
 }
 
-.leftside{
-  background: cover;
-  background-image: url("http://photofiles.alphacoders.com/259/25903.jpg");
-  height: 100vh;
-}
-
-.rightside{
-  background-image: url("http://img-fotki.yandex.ru/get/4711/14124454.285/0_7af2e_30a4bc3b_XXL");
+.rightside {
+  width: 50vw;
+  // background-image: url("http://img-fotki.yandex.ru/get/4711/14124454.285/0_7af2e_30a4bc3b_XXL");
   height: 100vh
 }
 
@@ -45,18 +52,43 @@ a:focus, a:hover{
   text-decoration: none;
 }
 
-.name {
-  position:absolute;
-  z-index: 1;
+  // .container {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+
+
+.leftside {
+  background: cover;
+  position: fixed;
+  // background-image: url("http://photofiles.alphacoders.com/259/25903.jpg");
+  height: 100vh;
+}
+
+.desc {
+  // position:absolute;
+  z-index: 4;
   width: 100%;
-  font-family: 'Fredoka One';
-  font-size: 13vh;
+  font-size: 5vh;
   color: white;
-  margin-top: 40vh;
+  margin-top: 55vh;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.name {
+  // position:absolute;
+  // z-index: 4;
+  // width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5vh;
+  color: white;
+  margin-top: 40px;
+  z-index: 4;
+  // text-align: center;
 
 }
 .cd {
+  position: absolute;
   color: white;
   text-decoration: none;
   margin-top: 55vh;
@@ -92,8 +124,8 @@ a:focus, a:hover{
   font-family: 'Montserrat', sans-serif;
   margin-top: 20vh;
   text-align: center;
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 30px;
+  font-weight: normal;
   color: white;
 }
 .about_para {
@@ -114,6 +146,7 @@ a:focus, a:hover{
     // background: #061D25;
     background-color: transparent;
     padding: 10px 0;
+    position:fixed;
 }
 
 .footer a {

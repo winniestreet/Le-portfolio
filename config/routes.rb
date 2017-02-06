@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   get 'blog/index'
 
+  get 'pages/about'
+  get 'pages/contact'
+
   resources :enquiries
   get 'pages/login'
 

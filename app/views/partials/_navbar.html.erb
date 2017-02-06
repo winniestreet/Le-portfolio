@@ -3,10 +3,11 @@
 </head>
 
 <nav id="mainNav" style="padding-right: 5%; z-index: 9999" class="nav navbar-nav navbar-right page-scroll navbar-custom">
-  <li><%= link_to 'ABOUT', root_path %></li>
+  <li><a href='pages/about'>ABOUT</a></li>
   <li><%= link_to 'BLOG', articles_path, :class => "navstyle"%></li>
-  <li><%= link_to 'CONTACT', root_path(:anchor => "contact") %></li>
+  <li><a href='pages/contact'>CONTACT</a></li>
   <% if user_signed_in? %>
   <li><%= link_to 'sign out', destroy_user_session_path, method: :delete%></li>
   <%end%>
 </nav>
+<!-- <%= link_to 'ABOUT', root_path %> -->

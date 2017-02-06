@@ -4,15 +4,24 @@
 .new_enquiry {
   margin-bottom: 10vh;
   padding: 0px;
-  width: 100%;
+  width: 50%;
 }
 // .field {
 //   text-align: left;
 // }
+.contact_form {
+  align-items: left;
+}
+
 .field {
   display:block;
-  text-align: center;
+  // text-align: center;
   vertical-align: baseline;
+
+}
+.form-control.boxes {
+  outline-color: white;
+  background-color: transparent;
 }
 .contact_form {
   width: 100%;
@@ -20,9 +29,19 @@
   padding: 0;
 
 }
-.input {
-  width: 400px;
+
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+  background-color: transparent;
+  border-style: solid;
+  border-color: white;
+  border-radius: 4px;
+  border-width: 1px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+
 }
-.label {
-  font-size: 20px;
+label {
+  color: white;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
 }
